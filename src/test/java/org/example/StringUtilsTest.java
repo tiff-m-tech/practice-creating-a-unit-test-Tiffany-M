@@ -17,13 +17,13 @@ public class StringUtilsTest {
 
     // positive case: a normal word reverses correctly
     @Test
-    public void testReverse() {
+    public void testReverseReturnsReversedString() {
         assertEquals("tac", stringUtils.reverse("cat"), "reverse() should return the input with its characters in reverse order");
     }
 
     // negative case: reversing a non-palindrome should NOT give back the original
     @Test
-    public void testReverseNotEqualToOriginal() {
+    public void testReverseNotEqualToOriginalString() {
         assertNotEquals("cat", stringUtils.reverse("cat"), "reverse() of a non-palindrome should not equal the original string");  // "tac" != "cat"
     }
 
@@ -54,3 +54,11 @@ public class StringUtilsTest {
     }
 
 }
+// Checklist from Reflection for Unit Testing Worksheet
+
+// ✓ The test class mirrors the name of the class being tested (with Test at the end)
+// ✓ The test method name clearly describes what is being tested
+// ✓ The test can run independently and doesn’t rely on other tests
+// ✓ There is at least one test for the normal (“happy path”) case
+// ✓ There is at least one test for an edge case or unusual input
+// ✓ The test uses appropriate assertions to verify behavior
